@@ -2,8 +2,8 @@ const Binance = require("node-binance-api");
 const { Stochastic } = require("technicalindicators");
 
 const binance = new Binance().options({
-  APIKEY: "iANW73R4NINFaUHxQLQadLDaPKEGLPYBuW6my2h87uPd6maZWZ1TRyWNYJCzsE5s",
-  APISECRET: "5tRxF5BQYaqiLCPTy6AMoSirFm5fwirz3urrHfZazPzqc4cmh8VCDOAXwGAEUMwS",
+  APIKEY: "",
+  APISECRET: "",
   useServerTime: true, // If you get timestamp errors, synchronize with Binance server time
   recvWindow: 1000, // Increase if timestamp errors persist
   verbose: true,

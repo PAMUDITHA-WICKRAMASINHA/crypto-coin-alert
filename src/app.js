@@ -11,7 +11,15 @@ const client = Binance({
 });
 
 // Define an array of symbols to analyze
-const symbols = ["BTCUSDT", "ETHUSDT", "XRPUSDT"]; // Add more symbols as needed
+const symbols = [
+  "BTCUSDT",
+  "ETHUSDT",
+  "XRPUSDT",
+  "SOLUSDT",
+  "ADAUSDT",
+  "MEMEUSDT",
+  "MATICUSDT",
+]; // Add more symbols as needed
 const interval = "4h";
 
 // Object to store buy and sell information for each symbol
