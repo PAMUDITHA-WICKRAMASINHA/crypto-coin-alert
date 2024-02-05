@@ -142,7 +142,7 @@ const identifySignals = (closePrices, sma, symbol) => {
 };
 
 // Interval for running the analysis (adjust as needed)
-const analysisInterval = 5000; // 5 seconds
+const analysisInterval = 60000; // 60 seconds
 
 // Run the analysis initially
 analyzeMarket();
