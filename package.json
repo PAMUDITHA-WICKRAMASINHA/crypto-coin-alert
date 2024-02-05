@@ -1,0 +1,23 @@
+{
+  "name": "binance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.17.0",
+    "axios": "^1.6.7",
+    "binance-api-node": "^0.12.7",
+    "brain.js": "^1.6.1",
+    "node-binance-api": "^0.13.1",
+    "ta-lib": "^0.11.0",
+    "talib": "^1.1.5",
+    "technicalindicators": "^3.1.0"
+  }
+}
