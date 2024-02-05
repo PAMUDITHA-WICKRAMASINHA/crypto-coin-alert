@@ -35,6 +35,7 @@ symbols.forEach((symbol) => {
 
 const analyzeMarket = async () => {
   try {
+    console.log("Analysis Start");
     for (const symbol of symbols) {
       const candles = await client.candles({
         symbol: symbol,
