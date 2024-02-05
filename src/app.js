@@ -130,7 +130,11 @@ const identifySignals = (closePrices, sma, symbol) => {
       symbolData[symbol].sell_check = false;
     }
   } else if (lastClose < lastSMA) {
-    if (symbolData[symbol].sell == 0 || lastSMA < symbolData[symbol].sell) {
+    const duration = symbolData[symbol].sell - lastSMA;
+    if (
+      symbolData[symbol].sell == 0 ||
+      (lastSMA < symbolData[symbol].sell && duration > 100)
+    ) {
       signals.push("SELL");
       symbolData[symbol].sell = lastSMA;
       symbolData[symbol].buy = 0;
