@@ -2,7 +2,7 @@ import { config } from "dotenv";
 config();
 import express, { Application, Request, Response } from 'express';
 import { constants as APP_CONST } from "./constant/application";
-import { processAllFuturesSymbols } from "./controller/RSI.controller";
+import { processAllFuturesSymbols } from "./controller/coin.anaysis";
 
 const app = express();
 
@@ -14,9 +14,10 @@ app.listen(PORT, (): void => {
     console.log('SERVER IS UP ON PORT:', PORT);
 });
 
-// setInterval(()=>{
-//     // Run the script
-// }, 1000 * 5)
+setInterval(()=>{
+    // Run the script
+    processAllFuturesSymbols();
+    console.log("-------------------------------------------------")
+}, 1000 * 120)
 
-processAllFuturesSymbols();
 
