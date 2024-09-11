@@ -2,7 +2,7 @@ import { config } from "dotenv";
 config();
 import express, { Application, Request, Response } from 'express';
 import { constants as APP_CONST } from "./constant/application";
-import { processAllFuturesSymbols } from "./controller/coin.anaysis";
+import { processAllFuturesSymbols } from "./controller/coin.anaysis.controller";
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.listen(PORT, (): void => {
 setInterval(()=>{
     // Run the script
     processAllFuturesSymbols();
-    console.log("-------------------------------------------------")
+    // console.log("-------------------------------------------------")
 }, 1000 * 120)
 
 

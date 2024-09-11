@@ -14,7 +14,7 @@ export function calculateEMA(prices: number[], period: number): number[] {
     return ema;
 }
 
-function calculateSMA(closingPrices: number[], period: number): number[] {
+export function calculateSMA(closingPrices: number[], period: number): number[] {
     if (closingPrices.length < period) {
         throw new Error('Not enough data to calculate SMA');
     }
