@@ -29,7 +29,7 @@ export const sendTelegram = async (data: any): Promise<void> => {
 
   const messageData: MessageData = {
     chat_id: chatId,
-    text: `supremex\n\nAPI Call Time Out\n\n${JSON.stringify(data, null, 2)}`,
+    text: `Crypto Alert\n\n${JSON.stringify(data, null, 2)}`,
   };
 
   await sendMessage(messageData);
